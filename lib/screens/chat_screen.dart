@@ -2,9 +2,8 @@ import 'package:firebasechat/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebasechat/constant.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/services.dart';
 
 User loggedUser;
 
@@ -26,7 +25,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     getCurrentUser();
@@ -42,7 +40,6 @@ class _ChatScreenState extends State<ChatScreen> {
       // print(loggedUser.email);
     } on Exception catch (e) {
       print(e);
-      // TODO
     }
   }
 
@@ -146,7 +143,7 @@ class Stream extends StatelessWidget {
               ),
             );
           }
-          final data = AsyncSnapshot?.data?.docs.reversed ?? '';
+          final data = AsyncSnapshot.data.docs.reversed ?? '';
 
           for (var message in data) {
             final messageText = message?.get('text') ?? '';

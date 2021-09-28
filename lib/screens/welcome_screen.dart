@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 import '../widgets/login_button.dart';
 import 'login_screen.dart';
@@ -10,8 +10,6 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
-  final _auth = FirebaseAuth.instance;
-
   @override
   void initState() {
     super.initState();

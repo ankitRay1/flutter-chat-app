@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class WelcomeScreenButton extends StatelessWidget {
   WelcomeScreenButton({@required this.buttonText, @required this.onTap});
   String buttonText;

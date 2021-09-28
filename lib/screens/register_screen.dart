@@ -1,5 +1,5 @@
 import 'package:firebasechat/screens/login_screen.dart';
-import 'package:firebasechat/screens/welcome_screen.dart';
+
 import 'package:flutter/material.dart';
 
 import '../widgets/login_button.dart';
